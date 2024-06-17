@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body, input, select, textarea {
     font-family: 'Poppins', sans-serif;
-    background: #E5e5e5;
-    
+}
+
+body{
+    background: #E5e5e5;    
 }
 body::before{
     content: '';
@@ -43,7 +46,7 @@ header p{
 form {
     margin-top: 38px;
     background: #FAFAFC;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     min-height: 300px;
     padding: 64px;
     display: flex;
@@ -89,7 +92,7 @@ fieldset legend{
 .input-wrapper input, .input-wrapper textarea, .input-wrapper select{
     background:#Fafafc;
     border: 1px solid #e6e6f0;
-    border-radius: 8px;
+    border-radius: 8px; 
     height: 56px;
     padding: 0 24px;
     font-family: 'Poppins', sans-serif;
@@ -151,4 +154,32 @@ fieldset legend{
 }
 .checkbox-wrapper input:focus + label::before{
     outline: 2px solid black;
+}
+footer{
+    background: #f0f0f4;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #d6d6d6;
+    border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+    height: 56px;
+    background: #04d361;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Archivo', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-break: 26px;
+}
+
+footer .button:hover{
+    background: #09a44f;
+    cursor: pointer;
 }
