@@ -103,6 +103,7 @@ fieldset legend{
 
 .input-wrapper textarea{
     padding: 0;
+    resize: none;
     height: 168px;
 }
 
@@ -182,4 +183,8 @@ footer .button {
 footer .button:hover{
     background: #09a44f;
     cursor: pointer;
+}
+
+input:invalid{
+    border: 2px solid #ff1010;
 }
